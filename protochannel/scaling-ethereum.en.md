@@ -4,8 +4,8 @@ I've been doing a little bit of research lately on scaling transaction throughpu
 mainstream blockchains because it's where people's faith right now.
 Bitcoin and Ethereum in term
 
-- http://www.jeffcoleman.ca/state-channels/vl
+- http://www.jeffcoleman.ca/state-channels/
 - https://people.cs.uchicago.edu/~teutsch/papers/truebit.pdf
 - https://truebit.io
 - https://github.com/lightningnetwork/lnd
-
+- https://github.com/ethereum/EIPs/pull/195
