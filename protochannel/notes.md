@@ -7,3 +7,6 @@ Ressources:
 - https://truebit.io
 - https://github.com/lightningnetwork/lnd
 - https://github.com/ethereum/EIPs/pull/195
+- https://github.com/ledgerlabs/toy-state-channels
+- https://github.com/ledgerlabs/state-channels/wiki
+- https://medium.com/@simondlr/an-intro-to-truebit-a-scalable-decentralized-computational-court-1475531400c3
