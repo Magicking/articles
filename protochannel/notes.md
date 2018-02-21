@@ -1,5 +1,6 @@
 Ressources:
 
+- https://funfair.io/wp-content/uploads/FunFair-Technical-White-Paper.pdf
 - https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4
 - https://virtue.poker/wp-content/uploads/2017/08/Virtue-Poker-White-Paper-DRAFT-0.1.pdf (mental poker)
 - https://funfair.io/wp-content/uploads/FunFair-Technical-White-Paper.pdf
