@@ -1,0 +1,3 @@
+[submodule "scripts/ttystudio"]
+	path = scripts/ttystudio
+	url = https://github.com/chjj/ttystudio.git
