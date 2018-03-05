@@ -1,0 +1,72 @@
+J'ai commencé par regarder la documentation dev à 
+https://developers.steem.io/
+J'ai cherché une librairie Golang pour Steem avec https://golanglibs.com/top?q=steem
+J'ai pris https://github.com/go-steem/rpc car la plus populaire
+
+Je regarde la complexité de l'exemple https://github.com/go-steem/rpc#example
+J'init le git sandbox avec un nom « twi2st2e » twi-to-stee' ou toui-tout-stiii (il faut le prononcer) avec l'accent
+`git init twi2st2e`
+
+Je récupère la bibliotèque Steem `go get -d -v ./...`
+Je test `go run test.go` si ça tourne, 
+`%> go run test.go
+# github.com/go-steem/rpc/transactions
+signing.c:5:10: fatal error: secp256k1.h: No such file or directory
+ #include "secp256k1.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+`
+Weird, il y'avait un warning sur la pace concernant secp256k1 https://github.com/go-steem/rpc#installation , à checker.
+« This package calls bitcoin-core/secp256k1 using CGO to implement signed transactions, so you need to install secp256k1 first. Then it will be possible to build go-steem/rpc »
+Apparement il faudrait rebuild secp256k1 ??
+J'install via
+`
+%> yaourt -Sy libsecp256k1
+:: Synchronizing package databases...
+ core is up to date
+ extra                                1597.8 KiB  3.57M/s 00:00 [###################################] 100%
+ community                               4.2 MiB  3.81M/s 00:01 [###################################] 100%
+ multilib                              169.9 KiB  3.86M/s 00:00 [###################################] 100%
+ archlinuxfr is up to date
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) libsecp256k1-20170927+825+g0b70241-1
+
+Total Download Size:   0.10 MiB
+Total Installed Size:  0.21 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ libsecp256k1-20170927+825+g0b702...   107.5 KiB   951K/s 00:00 [###################################] 100%
+(1/1) checking keys in keyring                                  [###################################] 100%
+(1/1) checking package integrity                                [###################################] 100%
+(1/1) loading package files                                     [###################################] 100%
+(1/1) checking for file conflicts                               [###################################] 100%
+(1/1) checking available disk space                             [###################################] 100%
+:: Processing package changes...
+(1/1) installing libsecp256k1                                   [###################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+`
+Je reteste `
+%> go run test.go
+# command-line-arguments
+./test.go:63:34: cannot use url (type string) as type []string in argument to "github.com/go-steem/rpc/transports/websocket".NewTransport
+`
+Encore une erreur, un problème d'argument, la documentation nous donne
+`
+  3 import "github.com/go-steem/rpc/transports/websocket"
+  2 
+  1 func NewTransport(urls []string, options ...Option) (*Transport, error)
+  0 
+  1 NewTransport creates a new transport that connects to the given WebSocket URLs.
+  2 
+  3 It is possible to specify multiple WebSocket endpoint URLs. In case the
+  4 transport is configured to reconnect automatically, the URL to connect to is
+  5 rotated on every connect attempt using round-robin.
+`
+Je fix
+patch commit
+Pour que ça soit plus joli, j'installe ttystudio https://github.com/chjj/ttystudio
+Script pour ttystudio+commit=
