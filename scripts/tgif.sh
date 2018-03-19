@@ -8,6 +8,7 @@ IDX=(${RUSH_DIR}/${RUSH_PREFIX}*)
 if [ x"${1}" != "x" ]; then
   RUSH_NAME="${1}-${IDX}"
   RUSH_BRANCH="${1}"
+  NOPUSH="yes"
 else
   # https://stackoverflow.com/questions/2793812/generate-a-random-filename-in-unix-shell
   RUSH_NAME=`cat /dev/urandom | tr -cd 'a-f0-9' | head -c 32`
@@ -21,6 +22,8 @@ cd "${RUSH_DIR}"
 git checkout -b "${RUSH_PREFIX}${RUSH_BRANCH}"
 git add ${RUSH_FILE}
 git commit ${RUSH_FILE} -m "Add ttystudio rush json frames for « ${RUSH_NAME} » attempt ${IDX}"
-git push --set-upstream origin "${RUSH_PREFIX}${RUSH_BRANCH}"&
+if [ x"${NOPUSH}" != "xyes" ]; then
+  git push --set-upstream origin "${RUSH_PREFIX}${RUSH_BRANCH}"&
+fi
 git checkout master
 cd "${PWD}"
