@@ -23,18 +23,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="70.641609"
-     inkscape:cy="167.33883"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="244.20514"
+     inkscape:cy="133.69922"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="true"
-     inkscape:window-width="1276"
-     inkscape:window-height="1376"
+     inkscape:window-width="2556"
+     inkscape:window-height="1015"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="391"
      inkscape:window-maximized="0"
-     units="px">
+     units="px"
+     inkscape:snap-text-baseline="true">
     <inkscape:grid
        type="xygrid"
        id="grid5618"
@@ -59,12 +60,106 @@
   <g
      id="layer1"
      inkscape:groupmode="layer"
-     inkscape:label="Background"
-     sodipodi:insensitive="true" />
+     inkscape:label="Background" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Text"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;line-height:125%;font-family:'Inconsolata-dz for Powerline';-inkscape-font-specification:'Inconsolata-dz for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="42.333332"
+       y="11.343748"
+       id="text9779"><tspan
+         sodipodi:role="line"
+         id="tspan9777"
+         x="42.333332"
+         y="11.343748"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.58611107px;font-family:'Inconsolata-dz for Powerline';-inkscape-font-specification:'Inconsolata-dz for Powerline';stroke-width:0.26458332px">Sylvain Laurent</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:125%;font-family:'Bitstream Terminal';-inkscape-font-specification:'Bitstream Terminal';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="44.714584"
+       y="21.397915"
+       id="text9783"><tspan
+         sodipodi:role="line"
+         id="tspan9781"
+         x="44.714584"
+         y="21.397915"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'Bitstream Terminal';-inkscape-font-specification:'Bitstream Terminal';stroke-width:0.26458332px">Blockchain Engineer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:'Inconsolata-dz for Powerline';-inkscape-font-specification:'Inconsolata-dz for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="66.145836"
+       y="40.447914"
+       id="text9787"><tspan
+         sodipodi:role="line"
+         id="tspan9785"
+         x="66.145836"
+         y="40.447914"
+         style="stroke-width:0.26458332px">Consulting</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:'Inconsolata-dz for Powerline';-inkscape-font-specification:'Inconsolata-dz for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="66.145836"
+       y="32.510414"
+       id="text9791"><tspan
+         sodipodi:role="line"
+         id="tspan9789"
+         x="66.145836"
+         y="32.510414"
+         style="stroke-width:0.26458332px">Audit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:'Inconsolata-dz for Powerline';-inkscape-font-specification:'Inconsolata-dz for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="42.333332"
+       y="32.510414"
+       id="text9795"><tspan
+         sodipodi:role="line"
+         id="tspan9793"
+         x="42.333332"
+         y="32.510414"
+         style="stroke-width:0.26458332px">Production</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:'Inconsolata-dz for Powerline';-inkscape-font-specification:'Inconsolata-dz for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="42.333332"
+       y="40.447914"
+       id="text9799"><tspan
+         sodipodi:role="line"
+         id="tspan9797"
+         x="42.333332"
+         y="40.447914"
+         style="stroke-width:0.26458332px">Research</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:'Inconsolata-dz for Powerline';-inkscape-font-specification:'Inconsolata-dz for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="42.333332"
+       y="51.031246"
+       id="text9803"><tspan
+         sodipodi:role="line"
+         id="tspan9801"
+         x="42.333332"
+         y="51.031246"
+         style="stroke-width:0.26458332px">+33627289097</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:'Inconsolata-dz for Powerline';-inkscape-font-specification:'Inconsolata-dz for Powerline';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="66.145836"
+       y="51.031246"
+       id="text9807"><tspan
+         sodipodi:role="line"
+         id="tspan9805"
+         x="66.145836"
+         y="51.031246"
+         style="stroke-width:0.26458332px">s@6120.eu</tspan></text>
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Block layer">
+     inkscape:label="Blocks"
+     sodipodi:insensitive="true">
     <path
        style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 19.84375,10.020831 21.166667,8.6979151 V 6.0520815 L 19.84375,7.374998 Z"
@@ -124,7 +219,7 @@
        id="path5729-2-9-2"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#0000ff;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 17.197916,12.666664 1.322917,-1.322916 V 8.6979145 l -1.322917,1.3229165 z"
        id="path5797"
        inkscape:connector-curvature="0" />
