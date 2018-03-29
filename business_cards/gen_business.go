@@ -112,7 +112,7 @@ func main() {
 	key := fmt.Sprintf("%064x", pkey.D)
 	addr := crypto.PubkeyToAddress(pkey.PublicKey)
 	url := fmt.Sprintf("https://token.6120.eu/%v/%v", key, receiptIndex)
-	log.Println("Address:", addr.Hex(), "URL:", url)
+	log.Println("Address:", addr.Hex())
 	svgMeta, err := SVG(url, qrcode.Medium, 256)
 	if err = AddrToHex(svgMeta, addr); err != nil {
 		log.Fatalf("Error: %s", err.Error())
