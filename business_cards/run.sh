@@ -1,4 +1,4 @@
 #!/bin/sh
 
 #uuoc
-cat "$1" | awk '{ print $2 }' | xargs -P4 -L1 -I{} /bin/sh -c 'go run gen_business.go --key {} > "bc/business-{}".svg; convert -density 300 bc/business-{}.svg bc/business-{}.png'
+cat "$1" | awk '{ print "go run gen_business.go --key "$2" > bc/business-"$1".svg; convert -density 300 bc/business-"$1".svg bc/business-"$1".png" }' | xargs -P4 -L1 -I{} /bin/sh -c '{}'
