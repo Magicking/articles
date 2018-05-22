@@ -14,9 +14,20 @@ else
   RUSH_NAME=`cat /dev/urandom | tr -cd 'a-f0-9' | head -c 32`
   RUSH_BRANCH="${RUSH_NAME}"
 fi
+
 RUSH_FILE="${RUSH_DIR}/${RUSH_PREFIX}${RUSH_NAME}".json
 
 "${ARTICLES_REPO}"/scripts/ttystudio/bin/ttystudio --record "${RUSH_FILE}" --interval=100
+
+minsize=$((49 * 1024 * 1024)) # 50mo is Github git-lfs notice
+fsize=$(wc -c < "${RUSH_DIR}/${RUSH_PREFIX}${RUSH_NAME}".json)
+
+if [ $fsize -ge $minsize ]; then
+  xz -c "${RUSH_DIR}/${RUSH_PREFIX}${RUSH_NAME}".json | pv > "${RUSH_DIR}/${RUSH_PREFIX}${RUSH_NAME}".xz
+  mv -v "${RUSH_DIR}/${RUSH_PREFIX}${RUSH_NAME}".json /tmp/"${RUSH_PREFIX}${RUSH_NAME}".json
+  RUSH_FILE="${RUSH_DIR}/${RUSH_PREFIX}${RUSH_NAME}".xz
+fi
+
 PWD=`pwd`
 cd "${RUSH_DIR}"
 git checkout -b "${RUSH_PREFIX}${RUSH_BRANCH}"
