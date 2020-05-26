@@ -1,0 +1,73 @@
+		function newDate(days) {
+			return moment("2018-01-01 05:29:00").add(days, 'd').toDate();
+		}
+
+		function newDateString(days) {
+			return moment("2018-01-01").add(days, 'd').format();
+		}
+
+		var color = Chart.helpers.color;
+		var config = {
+			type: 'line',
+			data: {
+				datasets: [{
+					label: 'Incoming invitation',
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					fill: false,
+					data: incoming,
+				}, {
+					label: 'Outgoing invitation',
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					fill: false,
+					data: outgoing,
+				}, {
+					label: 'Total invitation',
+					backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+					borderColor: window.chartColors.blue,
+					fill: false,
+					data: total,
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'LinkedIn invitations'
+				},
+				scales: {
+					xAxes: [{
+						type: 'time',
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Date'
+						},
+						ticks: {
+							major: {
+								fontStyle: 'bold',
+								fontColor: '#FF0000'
+							}
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'value'
+						}
+					}]
+				}
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myLine = new Chart(ctx, config);
+		};
+	</script>
+
+
+
+</body></html>
